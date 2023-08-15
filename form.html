@@ -3,9 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>form fundamentals</title>
+    <title>Form fundamentals</title>
 </head>
 <body>
-    
+    <header>
+        <h1>Become a driver</h1>
+        <h2>
+            <a href="#">Sign up to ride</a>
+        </h2>
+    </header>
+    <main>
+        <form action="">
+            <ul>
+                <li>
+                    <span>
+                        <input type="radio" name="car" id="have" checked>
+                        <label for="I have a car">I have a car</label>
+                    </span>
+                    <span>
+                        <input type="radio" name="car" id="need">
+                        <label for="I need a car">I need a car</label>
+                    </span>
+                </li>
+                <li>
+                    <label for="fname">first name</label>
+                    <input type="text" name="fname" id="fname" placeholder="enter your first name" required>
+                </li>
+                <li>
+                    <label for="sname">surname</label>
+                    <input type="text" name="sname" id="sname" placeholder="enter your surname" required>
+                </li>
+                <li>
+                    <label for="email">email address</label>
+                    <input type="email" name="email" id="email" placeholder="iceley007@gmail" required>
+                </li>
+                <li>
+                    <label for="pwd">password</label>
+                    <input type="password" name="password" id="password" required>
+                </li>
+                <li>
+                    <label for="dob">date of birth</label>
+                    <input type="date" name="dob" id="dob">
+                </li>
+                <li>
+                    <label for="tel">phone number</label>
+                    <input type="tel" name="tel" id="tel">
+                </li>
+                <li>
+                    <label for="city">city you will drive in</label>
+                    <select>
+                        <option value="default" selected>select your city</option>
+                        <optgroup label="SOUTH WEST">
+                            <option value="Lg">Lagos</option>
+                            <option value="Ak">Akure</option>
+                        </optgroup>
+                        <optgroup label="SOUTH SOUTH">
+                            <option value="Ph">Portharcourt</option>
+                            <option value="Uy">Uyo</option>
+                        </optgroup>                        
+                        <optgroup label="SOUTH EAST">
+                            <option value="An">Anambra</option>
+                            <option value="En">Enugu</option>
+                        </optgroup>
+                        <optgroup label="NORTH CENTRAL">
+                            <option value="Abj">Abj</option>
+                            <option value="Js">Jos</option>
+                        </optgroup>
+                    </select>
+                </li>
+                <li>
+                    <label for="invite">invite code</label>
+                    <input type="number" name="invite" id="invite" min="5000" max="9999">
+                </li>
+                <li>
+                    <input type="checkbox" name="terms" id="terms">
+                    <label for="terms">
+                        By processing, you agree with the <a href="#">terms &amp; conditions</a> required within <a href="#">our policy</a>
+                    </label>
+                </li>
+                <li>
+                    <label for="upload">upload your image</label>
+                    <input type="image" name="upload" id="upload" accept="image/png" size="2048" multiple>
+                </li>
+                <li>
+                    <button type="button">create an account</button>
+                </li>
+            </ul>
+        </form>
+    </main>
 </body>
 </html>
